@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Horas Trabalhadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cálculo de Horas Trabalhadas</h1>
+        <form id="horas-form">
+            <div class="input-group">
+                <label for="entrada">Entrada:</label>
+                <input type="time" id="entrada" required>
+            </div>
+            <div class="input-group">
+                <label for="saida">Saída:</label>
+                <input type="time" id="saida" required>
+            </div>
+            <button type="submit">Adicionar Horário</button>
+        </form>
+
+        <div id="horarios-adicionados">
+            <h2>Horários Adicionados</h2>
+            <ul id="lista-horarios">
+                <!-- A lista de horários adicionados será inserida aqui -->
+            </ul>
+        </div>
+
+        <div class="resultado">
+            <h2>Total de Horas Trabalhadas</h2>
+            <p id="total-horas">0 horas e 0 minutos</p>
+        </div>
+
+        <button id="exportar-planilha">Exportar Planilha</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
